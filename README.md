@@ -13,19 +13,13 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 
-## Authors
+## Author
 
-👤 **Author1**
+👤 **King Josaphat Chewa (KJC)**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Kingjosh007](https://github.com/Kingjosh007)
+- Twitter: [@KingJoChewa](https://twitter.com/KingJoChewa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/king-josaphat-chewa/)
 
 ## 🤝 Contributing
 
@@ -39,10 +33,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Heartfelt thanks to Microverse
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is **MIT** licensed.
