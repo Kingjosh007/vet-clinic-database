@@ -10,5 +10,4 @@ CREATE TABLE IF NOT EXISTS animals
     escape_attempts INTEGER DEFAULT 0,
     neutered boolean DEFAULT false,
     weight_kg NUMERIC,
-    CONSTRAINT animals_pkey PRIMARY KEY (id)
 );
