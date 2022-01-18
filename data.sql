@@ -11,3 +11,4 @@ INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) 
 
 --Animal: Her name is Devimon. She was born on May 12th, 2017, and currently weighs 11kg. She is neutered and she has tried to escape 5 times.
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg) VALUES ('Devimon', '2017-05-12', 5, true, 11.0);
+
