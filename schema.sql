@@ -11,3 +11,6 @@ CREATE TABLE IF NOT EXISTS animals
     neutered boolean DEFAULT false,
     weight_kg NUMERIC
 )
+
+-- Add a column species of type string to your animals table
+ALTER TABLE animals ADD species TEXT;
