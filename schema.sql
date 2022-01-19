@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS animals;
 
 CREATE TABLE IF NOT EXISTS animals
 (
-    id BIGSERIAL PRIMARY KEY,
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     name TEXT,
     date_of_birth DATE,
     escape_attempts INTEGER DEFAULT 0,
