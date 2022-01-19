@@ -35,4 +35,11 @@ SELECT * FROM animals;
 ROLLBACK;
 SELECT * FROM animals;
 
+-- Transaction to update the animals table by setting the species column for all animals.
+BEGIN;
+UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
+UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
+-- Commit the transaction and verify the changes are made and persisted.
+COMMIT;
+SELECT * FROM animals;
 
