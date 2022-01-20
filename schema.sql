@@ -59,6 +59,25 @@ CREATE TABLE IF NOT EXISTS specializations(
  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
  vet_id INT NOT NULL,
  species_id INT NOT NULL,
- CONSTRAINT fk_specializations_vets FOREIGN KEY(vet_id) REFERENCES vets(id),
- CONSTRAINT fk_specializations_species FOREIGN KEY(species_id) REFERENCES species(id)
+ CONSTRAINT fk_specializations_vets FOREIGN KEY(vet_id) REFERENCES vets(id) 
+            ON DELETE CASCADE
+            ON UPDATE CASCADE,
+ CONSTRAINT fk_specializations_species FOREIGN KEY(species_id) REFERENCES species(id) 
+            ON DELETE CASCADE
+            ON UPDATE CASCADE
+);
+
+-- Create a join table named visits to handle the many-to-many relationship between animals and vets
+DROP TABLE IF EXISTS visits;
+CREATE TABLE IF NOT EXISTS visits(
+ id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+ animal_id INT NOT NULL,
+ vet_id INT NOT NULL,
+ date_of_visit DATE,
+ CONSTRAINT fk_visits_animals FOREIGN KEY(animal_id) REFERENCES animals(id) 
+            ON DELETE CASCADE
+            ON UPDATE CASCADE,
+ CONSTRAINT fk_visits_vets FOREIGN KEY(vet_id) REFERENCES vets(id)
+            ON DELETE CASCADE
+            ON UPDATE CASCADE
 );
