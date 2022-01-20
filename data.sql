@@ -76,3 +76,15 @@ INSERT INTO vets (name, age, date_of_graduation) VALUES ('William Tatcher', 45, 
                                                         ('Maisy Smith', 26, '2019-01-17'),
                                                         ('Stephanie Mendez', 64, '1981-05-04'),
                                                         ('Jack Harkness', 38, '2008-06-08');
+
+-- Link vets to specialities
+
+-- William Tatcher is specialized in Pokemon.
+INSERT INTO specializations (vet_id, species_id) VALUES ((SELECT id FROM vets WHERE name = 'William Tatcher'), (SELECT id FROM species WHERE name = 'Pokemon'));
+
+-- Stephanie Mendez is specialized in Digimon and Pokemon.
+INSERT INTO specializations (vet_id, species_id) VALUES ((SELECT id FROM vets WHERE name = 'Stephanie Mendez'), (SELECT id FROM species WHERE name = 'Pokemon')), 
+                                                        ((SELECT id FROM vets WHERE name = 'Stephanie Mendez'), (SELECT id FROM species WHERE name = 'Digimon'));
+-- Jack Harkness is specialized in Digimon.
+INSERT INTO specializations (vet_id, species_id) VALUES ((SELECT id FROM vets WHERE name = 'Jack Harkness'), (SELECT id FROM species WHERE name = 'Digimon'));
+
