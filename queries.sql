@@ -157,3 +157,10 @@ SELECT A.name as animal_name, Vi.date_of_visit, V.name as vet_name
 SELECT A.name as animal_name, COUNT(Vi.id) as nb_visits
     FROM animals A JOIN visits Vi ON A.id = Vi.animal_id 
     GROUP BY A.name ORDER BY COUNT(Vi.id) DESC LIMIT 1;
+
+-- Who was Maisy Smith's first visit?
+SELECT A.name as animal_name, V.name as vet_name, Vi.date_of_visit
+    FROM animals A JOIN visits Vi ON A.id = Vi.animal_id 
+    JOIN vets V ON Vi.vet_id = V.id
+    WHERE V.name = 'Maisy Smith' ORDER BY Vi.date_of_visit ASC LIMIT 1;
+
