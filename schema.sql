@@ -53,3 +53,12 @@ CREATE TABLE IF NOT EXISTS vets(
  date_of_graduation DATE
 );
 
+-- Create a join table named specializations
+DROP TABLE IF EXISTS specializations;
+CREATE TABLE IF NOT EXISTS specializations(
+ id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+ vet_id INT NOT NULL,
+ species_id INT NOT NULL,
+ CONSTRAINT fk_specializations_vets FOREIGN KEY(vet_id) REFERENCES vets(id),
+ CONSTRAINT fk_specializations_species FOREIGN KEY(species_id) REFERENCES species(id)
+);
