@@ -39,3 +39,6 @@ INSERT INTO owners (full_name, age) VALUES ('Sam Smith', 34),
                                            ('Dean Winchester', 14),
                                            ('Jodie Whittaker', 38);
 
+-- Insert data in the species table
+INSERT INTO species (name) VALUES ('Pokemon'),
+                                  ('Digimon');
