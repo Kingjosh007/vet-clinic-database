@@ -147,3 +147,13 @@ SELECT V.name as vet_name, Sp.name as vet_specializations
     FROM vets V FULL JOIN specializations S ON V.id = S.vet_id
     FULL JOIN species Sp ON Sp.id = S.species_id;
 
+-- List all animals that visited Stephanie Mendez between April 1st and August 30th, 2020.
+SELECT A.name as animal_name, Vi.date_of_visit, V.name as vet_name
+    FROM animals A JOIN visits Vi ON A.id = Vi.animal_id 
+    JOIN vets V ON Vi.vet_id = V.id
+    WHERE V.name = 'Stephanie Mendez' AND Vi.date_of_visit >= '2020-04-01' AND Vi.date_of_visit <= '2020-08-30';
+
+-- What animal has the most visits to vets?
+SELECT A.name as animal_name, COUNT(Vi.id) as nb_visits
+    FROM animals A JOIN visits Vi ON A.id = Vi.animal_id 
+    GROUP BY A.name ORDER BY COUNT(Vi.id) DESC LIMIT 1;
