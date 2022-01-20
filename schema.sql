@@ -42,3 +42,14 @@ ALTER TABLE animals ADD CONSTRAINT fk_animals_species FOREIGN KEY(species_id) RE
 -- Add a column named owner_id which is a foreign key referencing the owners table
 ALTER TABLE animals ADD COLUMN owner_id INT;
 ALTER TABLE animals ADD CONSTRAINT fk_animals_owners FOREIGN KEY(owner_id) REFERENCES owners(id);
+
+
+-- Create a table named vets
+DROP TABLE IF EXISTS vets;
+CREATE TABLE IF NOT EXISTS vets(
+ id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+ name TEXT,
+ age INT,
+ date_of_graduation DATE
+);
+
