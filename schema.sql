@@ -23,3 +23,11 @@ CREATE TABLE IF NOT EXISTS owners(
  full_name TEXT,
  age INT
 );
+
+-- Create a table named species
+DROP TABLE IF EXISTS species;
+CREATE TABLE IF NOT EXISTS species(
+ id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+ name TEXT
+);
+
