@@ -186,5 +186,3 @@ SELECT V.name as vet_name, S.name as animal_species, COUNT(Vi.animal_id) as tota
     WHERE V.name = 'Maisy Smith'
     GROUP BY V.name, S.name ORDER BY total_visits DESC LIMIT 1;
 
-    
-
