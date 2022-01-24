@@ -81,9 +81,12 @@ CREATE TABLE IF NOT EXISTS visits(
             ON DELETE CASCADE
             ON UPDATE CASCADE
 );
-
+-- Add an email column to your owners table
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
 -- Create index on animal_id in visits table 
-CREATE INDEX animal_id_visits_index ON visit(animal_id ASC);
+CREATE INDEX animal_id_visits_index ON visits(animal_id ASC);
+
+-- Create index on vet_id in visits table 
+CREATE INDEX vet_id_visits_index ON visits(vet_id ASC);
 
