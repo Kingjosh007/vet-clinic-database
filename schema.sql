@@ -82,5 +82,8 @@ CREATE TABLE IF NOT EXISTS visits(
             ON UPDATE CASCADE
 );
 
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
 -- Create index on animal_id in visits table 
 CREATE INDEX animal_id_visits_index ON visit(animal_id ASC);
+
