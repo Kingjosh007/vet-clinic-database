@@ -90,3 +90,6 @@ CREATE INDEX animal_id_visits_index ON visits(animal_id ASC);
 -- Create index on vet_id in visits table 
 CREATE INDEX vet_id_visits_index ON visits(vet_id ASC);
 
+-- Create index on email in owners table 
+CREATE INDEX email_owners ON owners(email ASC);
+
