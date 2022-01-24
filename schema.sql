@@ -81,3 +81,6 @@ CREATE TABLE IF NOT EXISTS visits(
             ON DELETE CASCADE
             ON UPDATE CASCADE
 );
+
+-- Create index on animal_id in visits table 
+CREATE INDEX animal_id_visits_index ON visit(animal_id ASC);
