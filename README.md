@@ -28,6 +28,9 @@ For the complex ones, I made used of more advanced commands, like `JOIN` and `GR
 - How many visits were with a vet that did not specialize in that animal's species?
 
 
+## Screenshot
+
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
@@ -41,6 +44,14 @@ This repository includes files with plain SQL that can be used to recreate a dat
 ## Author
 
 👤 **King Josaphat Chewa (KJC)**
+
+- GitHub: [@Kingjosh007](https://github.com/Kingjosh007)
+- Twitter: [@KingJoChewa](https://twitter.com/KingJoChewa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/king-josaphat-chewa/)
+
+## Contributors
+
+👤 **Grace Kabaghe**
 
 - GitHub: [@Kingjosh007](https://github.com/Kingjosh007)
 - Twitter: [@KingJoChewa](https://twitter.com/KingJoChewa)
