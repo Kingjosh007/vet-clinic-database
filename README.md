@@ -32,7 +32,10 @@ For the complex ones, I made used of more advanced commands, like `JOIN` and `GR
 ![Schema](screenshots/database-schema.PNG)
 
 ## Built with 
-[Link to DrawSQL](https://drawsql.app/)
+
+- ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+- PgAdmin 4
+- [DrawSQL](https://drawsql.app/) (Schema)
 
 ## Getting Started
 
