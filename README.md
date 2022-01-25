@@ -28,8 +28,8 @@ For the complex ones, I made used of more advanced commands, like `JOIN` and `GR
 - How many visits were with a vet that did not specialize in that animal's species?
 
 
-## Screenshot
-
+## Schema
+![Schema](screenshots/database-schema.PNG)
 
 ## Getting Started
 
@@ -53,9 +53,8 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 👤 **Grace Kabaghe**
 
-- GitHub: [@Kingjosh007](https://github.com/Kingjosh007)
-- Twitter: [@KingJoChewa](https://twitter.com/KingJoChewa)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/king-josaphat-chewa/)
+- GitHub: [@gracekabaghe](https://github.com/gracekabaghe)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/grace-kabaghe)
 
 ## 🤝 Contributing
 
