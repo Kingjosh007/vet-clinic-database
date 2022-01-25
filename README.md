@@ -28,6 +28,12 @@ For the complex ones, I made used of more advanced commands, like `JOIN` and `GR
 - How many visits were with a vet that did not specialize in that animal's species?
 
 
+## Schema
+![Schema](screenshots/database-schema.PNG)
+
+## Built with 
+[Link to DrawSQL](https://drawsql.app/)
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
@@ -37,6 +43,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 
+
 ## Author
 
 👤 **King Josaphat Chewa (KJC)**
@@ -44,6 +51,13 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - GitHub: [@Kingjosh007](https://github.com/Kingjosh007)
 - Twitter: [@KingJoChewa](https://twitter.com/KingJoChewa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/king-josaphat-chewa/)
+
+## Contributors
+
+👤 **Grace Kabaghe**
+
+- GitHub: [@gracekabaghe](https://github.com/gracekabaghe)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/grace-kabaghe)
 
 ## 🤝 Contributing
 
